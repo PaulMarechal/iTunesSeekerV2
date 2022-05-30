@@ -9,7 +9,6 @@ class Favoris extends React.Component {
             <View style={styles.container}> 
                 <FlatList
                     data={this.props.favoritesSong}
-                    keyExtractor={(item) => item.id.toString()}
                     onEndReachedThreshold={0.25}
                     renderItem={({ item }) => <FavorisItem song={item} />}
                 /> 
